@@ -14,9 +14,7 @@ services:
   app:
     depends_on:
       - "postgres"
-    build:
-      context: ./
-      dockerfile: ./Dockerfile
+    image: ttl.sh/f35196a6-b38a-4785-83d6-03ffbb756b01
     ports:
       - 3001:3001
     environment:
